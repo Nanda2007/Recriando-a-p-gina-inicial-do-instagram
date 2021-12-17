@@ -1,0 +1,200 @@
+<! DOCTYPE html >
+< html >
+  < cabeça >
+    < meta  charset = " utf-8 " />
+    < meta  name = " viewport " content = " width = device-width, initial-scale = 1.0 " />
+    < link  rel = " stylesheet " href = " style.css " />
+    < title > Instagram </ title >
+  </ head >
+  < corpo >
+    < div  class = " instagram-wrapper " >
+      < div  class = " instagram-phone " >
+        < img  src = " ./img/Instagram-conta.png " alt = " celular " />
+      </ div >
+      < div  class = " instagram-continue " >
+        < div  class = " group " >
+          < img
+            src = " ./img/instagram.png "
+            class = " instagram-logo "
+            alt = " instagram " />
+          < div  class = " profile-photo " >
+            < img  src = " ./img/and.jpg " alt = " foto do perfil " />
+          </ div >
+          < A  href = " # " class =" instagram-login " > Continuar Lewis Hamilton </ a >
+          < A  href = " # " class =" instagram-logout " > Remover Conta </ a >
+        </ div >
+        < div  class = " group " >
+          < p  class = " not-account " > Não é o lewishamilton? </ p >
+          < p  class = " não conta " >
+            < span  class = " link-blue " > Contas Alternar </ span >
+            ou
+            < span  class = " link-blue " > experimente-se </ span >
+          </ p >
+        </ div >
+        < div  class = " get-the-app " >
+          < p  class = " get-app " > Baixe o aplicativo </ p >
+          < div  class = " download " >
+            < A  href = " # " class =" app-download " > </ a >
+            < A  href = " # " class =" app-download " > </ a >
+          </ div >
+        </ div >
+      </ div >
+    </ div >
+  </ body >
+  < rodapé > </ rodapé >
+</ html >
+* {
+  preenchimento :  0 ;
+  margem :  0 ;
+  dimensionamento da caixa : caixa de borda;
+  decoração de texto : nenhum;
+  família da fonte : sans-serif;
+  tamanho da fonte :  14 px ;
+}
+
+corpo {
+  largura :  100 % ;
+  altura mínima :  100 vh ;
+  cor de fundo :  rgb ( 243 ,  243 ,  243 );
+  margem :  0 ;
+  preenchimento :  0 ;
+  display : flex;
+  justificar-conteúdo : centro;
+}
+
+. instagram-wrapper {
+  display : flex;
+  alinhar-itens : centro;
+  justify-content : start;
+  largura :  60 % ;
+  altura :  100 vh ;
+}
+
+. instagram-phone {
+  display : flex;
+  alinhar-itens : centro;
+  justificar-conteúdo : centro;
+  largura :  50 % ;
+}
+
+. instagram-phone  img {
+  altura :  50 rem ;
+}
+
+. instagram-continue {
+  display : flex;
+  alinhar-itens : centro; / * horizontal * /
+  justify-content : space-around; / * vertical * /
+  direção flexível : coluna;
+  largura :  50 % ;
+  altura mínima :  34 rem ;
+}
+
+. group {
+  display : flex;
+  justify-content : espaço entre;
+  alinhar-itens : centro;
+  direção flexível : coluna;
+  cor de fundo :  # ffffff ;
+  largura :  100 % ;
+  preenchimento :  1,3 rem  0 ;
+  borda :  cinza claro sólido de 1 px ;
+}
+
+. grupo : enésimo filho ( 1 ) {
+  altura mínima :  19 rem ;
+}
+
+. instagram-logo {
+  altura :  3 rem ;
+}
+
+. foto de perfil {
+  display : flex;
+  justificar-conteúdo : centro;
+  alinhar-itens : centro;
+  raio da borda :  50 % ;
+  estouro : oculto;
+}
+
+. foto de perfil  img {
+  altura :  6 rem ;
+}
+
+. instagram-login {
+  cor de fundo :  # 0095f6 ;
+  cor :  # ffffff ;
+  preenchimento :  8 px ;
+  raio da borda :  4 px ;
+  margem superior : ;
+}
+
+. instagram-logout {
+  cor :  # 0095f6 ;
+  margem superior :  1 rem ;
+}
+
+. não conta {
+  cor :  rgb ( 160 ,  160 ,  160 );
+}
+
+. link-blue {
+  cor :  # 0095f6 ;
+}
+
+. get-the-app {
+  display : flex;
+  direção flexível : coluna;
+  alinhar-itens : centro;
+  justificar-conteúdo : centro;
+  largura :  100 % ;
+  preenchimento :  1,3 rem  0 ;
+  peso da fonte : negrito;
+}
+
+. download {
+  display : flex;
+  largura :  100 % ;
+  justify-content : espaço-uniformemente;
+  alinhar-itens : centro;
+  preenchimento :  1 rem ;
+}
+
+. download do aplicativo {
+  altura :  3 rem ;
+  largura :  10 rem ;
+  tamanho do fundo : capa;
+}
+
+. download do aplicativo : n-ésimo filho ( 1 ) {
+  imagem de fundo :  url ( "./img/apple.png" );
+}
+. download do aplicativo : n-ésimo filho ( 2 ) {
+  imagem de fundo :  url ( "./img/googleplay.png" );
+}
+
+/* consultas de mídia */
+
+@media ( largura máxima :  1024 px ) {
+  . instagram-wrapper {
+    largura :  90 % ;
+  }
+}
+
+@media ( largura máxima :  650 px ) {
+  corpo {
+    cor de fundo :  # fff ;
+  }
+
+  . instagram-phone {
+    display : nenhum;
+  }
+
+  . instagram-continue {
+    largura :  100 % ;
+  }
+  
+  . group {
+  borda :  1 px totalmente transparente;
+  }
+}
